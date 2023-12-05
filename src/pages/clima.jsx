@@ -7,6 +7,7 @@ import Error from '@/components/Error';
 import Input from '@/components/Input';
 import WeatherResult from '@/components/WeatherResult';
 import { getWeather } from '@/services/getWeather';
+
 const Weather = ({apiKey}) => {
   const [city, setCity] = useState('');
   const [weather, setWeather] = useState(null);
