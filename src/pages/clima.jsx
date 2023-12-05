@@ -6,7 +6,6 @@ import Error from '@/components/Error';
 import Input from '@/components/Input';
 import WeatherResult from '@/components/WeatherResult';
 import { getWeather } from '@/services/getWeather';
-import Header from '@/components/Header';
 
 const Weather = ({apiKey}) => {
   const [city, setCity] = useState('');
@@ -21,7 +20,6 @@ const Weather = ({apiKey}) => {
 
   return (
     <>
-      <Header />
       <div className="flex justify-center items-center min-h-screen bg-gray-100">
         <div className="max-w-md w-full md:w-2/3 lg:w-1/2 xl:w-1/3 shadow-lg rounded-lg p-6 bg-white">
           <h1 className="text-2xl font-bold text-center mb-4 text-black">Clima actual</h1>
