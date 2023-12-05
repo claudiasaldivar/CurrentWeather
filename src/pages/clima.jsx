@@ -1,5 +1,3 @@
-// pages/index.js
-
 import { useState } from 'react';
 import { useForm } from 'react-hook-form'
 import axios from 'axios';
@@ -9,8 +7,7 @@ import Error from '@/components/Error';
 import Input from '@/components/Input';
 import WeatherResult from '@/components/WeatherResult';
 import { getWeather } from '@/services/getWeather';
-
-const Weather = () => {
+const Weather = ({apiKey}) => {
   const [city, setCity] = useState('');
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(false);
@@ -18,7 +15,7 @@ const Weather = () => {
 
   const { register, handleSubmit, formState: { errors } } = useForm()
   const onSubmit = (data) => {
-    getWeather(data.city, setWeather, setError, setLoading, setCity)
+    getWeather(data.city, setWeather, setError, setLoading, setCity, apiKey)
   }
 
   return (
