@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Aplicación del Clima
 
-## Getting Started
+Esta es una aplicación web que muestra el clima actual de diferentes ciudades del mundo. Se hizo uso de la API de [OpenWeatherMap] para obtener los datos meteorológicos y se utilizó [Tailwind] para los estilos. La aplicación fue desplegada en [Vercel] y se puede acceder desde el siguiente enlace: [https://current-weather-liard.vercel.app/clima].
 
-First, run the development server:
+## Cómo ejecutar el proyecto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Para ejecutar el proyecto en tu máquina local, necesitas tener instalado [Node.js] y [npm]. Luego, sigue estos pasos:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clona el repositorio o descarga el código fuente.
+2. Abre una terminal en la carpeta del proyecto y ejecuta el comando `npm install` para instalar las dependencias.
+3. Ejecuta el comando `npm run dev` para iniciar el servidor de desarrollo.
+4. Abre tu navegador y visita [http://localhost:3000/clima] para ver la aplicación.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Características principales
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- La aplicación muestra el clima actual de la ciudad que el usuario elija desde un menú desplegable.
+- Utiliza el método de [Server Side Rendering] para generar el HTML de la página en el servidor y enviarlo al cliente, lo que mejora el rendimiento y la optimización para motores de búsqueda.
+- Tiene un diseño responsivo y adapta su apariencia según el tamaño de la pantalla.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[OpenWeatherMap]: https://openweathermap.org/
+[Tailwind]: https://tailwindcss.com/
+[Vercel]: https://vercel.com/
+[Node.js]: https://nodejs.org/
+[npm]: https://www.npmjs.com/
+[Server Side Rendering]: https://nextjs.org/docs/advanced-features/server-side-rendering
