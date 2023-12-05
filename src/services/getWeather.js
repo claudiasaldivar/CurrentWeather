@@ -1,5 +1,3 @@
-import axios from "axios";
-
 export const getWeather = async (dataCity, setWeather, setError, setLoading, setCity) => {
   setLoading(true)
     try {
