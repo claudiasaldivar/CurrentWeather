@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form'
-import axios from 'axios';
 import '../app/globals.css'
 
 import Error from '@/components/Error';
@@ -16,7 +15,7 @@ const Weather = ({apiKey}) => {
 
   const { register, handleSubmit, formState: { errors } } = useForm()
   const onSubmit = (data) => {
-    getWeather(data.city, setWeather, setError, setLoading, setCity, apiKey)
+    getWeather(data.city, setWeather, setError, setLoading, setCity)
   }
 
   return (
@@ -43,16 +42,5 @@ const Weather = ({apiKey}) => {
   </div>
   );
 };
-
-export async function getServerSideProps() {
-    const response = await axios.get('http://localhost:3000/api/weather');
-    const apiKey = response.data.apiKey;
-  
-    return {
-      props: {
-        apiKey,
-      },
-    };
-  }
 
 export default Weather;
