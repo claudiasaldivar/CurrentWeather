@@ -12,5 +12,8 @@ module.exports = {
     images: {
       domains: ['openweathermap.org', 'static.vecteezy.com'],
     },
+    env: {
+      API_KEY: process.env.API_KEY,
+    },
   };
   
