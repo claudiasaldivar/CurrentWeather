@@ -3,7 +3,7 @@ export const getWeather = async (dataCity, setWeather, setError, setLoading, set
 
   try {
     // Obtener datos de ubicación
-    const locationResponse = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${dataCity}&limit=1&appid=9a2365c49c12c733f9ca31d301bf6e4c`);
+    const locationResponse = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${dataCity}&limit=1&appid=9a2365c49c12c733f9ca31d301bf6e4c`);
     const locationData = await locationResponse.json();
     const location = locationData[0];
 
