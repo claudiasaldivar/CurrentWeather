@@ -8,7 +8,7 @@ import Input from '@/components/Input';
 import WeatherResult from '@/components/WeatherResult';
 import { getWeather } from '@/services/getWeather';
 
-const Weather = ({apiKey}) => {
+const Weather = () => {
   const [city, setCity] = useState('');
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(false);
@@ -16,7 +16,7 @@ const Weather = ({apiKey}) => {
 
   const { register, handleSubmit, formState: { errors } } = useForm()
   const onSubmit = (data) => {
-    getWeather(data.city, setWeather, setError, setLoading, setCity, apiKey)
+    getWeather(data.city, setWeather, setError, setLoading, setCity)
   }
 
   return (
