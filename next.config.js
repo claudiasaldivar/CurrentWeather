@@ -10,7 +10,7 @@ module.exports = {
       ];
     },
     images: {
-      domains: ['openweathermap.org'],
+      domains: ['openweathermap.org', 'static.vecteezy.com'],
     },
   };
   
